@@ -1,0 +1,10 @@
+{
+  "name": "web-component-ui-library-poc",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "publish": "npm publish"
+  },
+  "main": "dist/main.js"
+}
