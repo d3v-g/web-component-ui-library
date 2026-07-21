@@ -1,18 +1,14 @@
-import { t as e } from "../chunks/decorate-DyMgX_Uh.js";
-import { t } from "../chunks/Icon-DSH49HPW.js";
-import "../components/visuals/Icon/index.js";
-import { svg as n } from "lit";
-import { customElement as r } from "lit/decorators.js";
+import { b as e, h as t, i as n, s as r } from "../core.js";
 //#region lib/icons/check.ts
-var i = class extends t {
+var i = class extends n {
 	get svg() {
-		return n`
+		return e`
 <svg class=${this.class} width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M17.9422 6.06718L7.94219 16.0672C7.88414 16.1253 7.81521 16.1714 7.73934 16.2028C7.66346 16.2343 7.58213 16.2505 7.5 16.2505C7.41787 16.2505 7.33654 16.2343 7.26066 16.2028C7.18479 16.1714 7.11586 16.1253 7.05781 16.0672L2.68281 11.6922C2.56554 11.5749 2.49965 11.4158 2.49965 11.25C2.49965 11.0841 2.56554 10.9251 2.68281 10.8078C2.80009 10.6905 2.95915 10.6246 3.125 10.6246C3.29085 10.6246 3.44991 10.6905 3.56719 10.8078L7.5 14.7414L17.0578 5.18281C17.1751 5.06553 17.3341 4.99965 17.5 4.99965C17.6659 4.99965 17.8249 5.06553 17.9422 5.18281C18.0595 5.30008 18.1253 5.45914 18.1253 5.625C18.1253 5.79085 18.0595 5.94991 17.9422 6.06718Z" fill="currentColor"/>
 </svg>
     `;
 	}
 };
-i = e([r("jet2-icon-check")], i);
+i = r([t("jet2-icon-check")], i);
 //#endregion
 export { i as Jet2IconCheck };
