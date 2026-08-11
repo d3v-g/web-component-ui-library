@@ -636,7 +636,7 @@ var W = class extends B {
 	renderButton() {
 		return A`
       <button
-        type="button"
+        type=${H(this.type || "button")}
         class=${this.getClassNames()}
         ?disabled=${this.isDisabled}
         aria-disabled=${H(this.isDisabled || void 0)}
@@ -668,7 +668,7 @@ var W = class extends B {
 U([_({ type: String })], W.prototype, "label", void 0), U([_({ type: String })], W.prototype, "size", void 0), U([_({ type: Boolean })], W.prototype, "disabled", void 0), U([_({ type: Boolean })], W.prototype, "loading", void 0), U([_({
 	type: Boolean,
 	attribute: "icon-only"
-})], W.prototype, "iconOnly", void 0), U([_({ type: String })], W.prototype, "href", void 0), U([_({ type: String })], W.prototype, "target", void 0), U([_({ type: String })], W.prototype, "rel", void 0), U([v({ slot: "primary" })], W.prototype, "primaryIcons", void 0), U([v({ slot: "secondary" })], W.prototype, "secondaryIcons", void 0);
+})], W.prototype, "iconOnly", void 0), U([_({ type: String })], W.prototype, "href", void 0), U([_({ type: String })], W.prototype, "target", void 0), U([_({ type: String })], W.prototype, "rel", void 0), U([_({ type: String })], W.prototype, "type", void 0), U([v({ slot: "primary" })], W.prototype, "primaryIcons", void 0), U([v({ slot: "secondary" })], W.prototype, "secondaryIcons", void 0);
 var G = class extends W {};
 G = U([e("jet2-button-base")], G);
 //#endregion
