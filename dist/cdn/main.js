@@ -642,6 +642,9 @@ var W = class extends B {
         aria-disabled=${H(this.isDisabled || void 0)}
         aria-busy=${H(this.loading || void 0)}
         aria-label=${H(this.semanticLabel || void 0)}
+        @click=${(e) => {
+			this.onClick && this.onClick(e), this.type === "submit" && this.closest("FORM")?.dispatchEvent(new Event("submit"));
+		}}
       >
         ${this.renderContent()}
       </button>
@@ -668,7 +671,7 @@ var W = class extends B {
 U([_({ type: String })], W.prototype, "label", void 0), U([_({ type: String })], W.prototype, "size", void 0), U([_({ type: Boolean })], W.prototype, "disabled", void 0), U([_({ type: Boolean })], W.prototype, "loading", void 0), U([_({
 	type: Boolean,
 	attribute: "icon-only"
-})], W.prototype, "iconOnly", void 0), U([_({ type: String })], W.prototype, "href", void 0), U([_({ type: String })], W.prototype, "target", void 0), U([_({ type: String })], W.prototype, "rel", void 0), U([_({ type: String })], W.prototype, "type", void 0), U([v({ slot: "primary" })], W.prototype, "primaryIcons", void 0), U([v({ slot: "secondary" })], W.prototype, "secondaryIcons", void 0);
+})], W.prototype, "iconOnly", void 0), U([_({ type: String })], W.prototype, "href", void 0), U([_({ type: String })], W.prototype, "target", void 0), U([_({ type: String })], W.prototype, "rel", void 0), U([_({ type: String })], W.prototype, "type", void 0), U([_({ type: Function })], W.prototype, "onClick", void 0), U([v({ slot: "primary" })], W.prototype, "primaryIcons", void 0), U([v({ slot: "secondary" })], W.prototype, "secondaryIcons", void 0);
 var G = class extends W {};
 G = U([e("jet2-button-base")], G);
 //#endregion
