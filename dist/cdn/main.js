@@ -672,30 +672,44 @@ H([_({ type: String })], U.prototype, "label", void 0), H([_({ type: String })],
 	type: Boolean,
 	attribute: "icon-only"
 })], U.prototype, "iconOnly", void 0), H([_({ type: String })], U.prototype, "href", void 0), H([_({ type: String })], U.prototype, "target", void 0), H([_({ type: String })], U.prototype, "rel", void 0), H([_({ type: String })], U.prototype, "type", void 0), H([_({ type: Function })], U.prototype, "onClick", void 0), H([de({ slot: "primary" })], U.prototype, "primaryIcons", void 0), H([de({ slot: "secondary" })], U.prototype, "secondaryIcons", void 0);
-var W = class extends U {};
-W = H([e("jet2-button-base")], W);
+var Le = class extends U {};
+Le = H([e("jet2-button-base")], Le);
 //#endregion
 //#region lib/components/actions/Button/Button.scss?inline
-var Le = ".button{text-decoration:none}.button.primary{color:var(--button-primary-default-text-color);background-color:var(--button-primary-default-background-color);border:var(--button-base-border) var(--button-primary-default-border-color)}.button.primary:hover{background-color:var(--button-primary-hover-background-color);border-color:var(--button-primary-hover-border-color)}.button.primary:active{background-color:var(--button-primary-active-background-color);border-color:var(--button-primary-active-border-color)}.button.primary.disabled,.button.primary.loading{color:var(--button-primary-disabled-text-color);background-color:var(--button-primary-disabled-background-color);border-color:var(--button-primary-disabled-border-color)}.button.secondary{color:var(--button-secondary-default-text-color);background-color:var(--button-secondary-default-background-color);border:var(--button-base-border) var(--button-secondary-default-border-color)}.button.secondary:hover{color:var(--button-secondary-hover-text-color);background-color:var(--button-secondary-hover-background-color)}.button.secondary:active{color:var(--button-secondary-active-text-color);background-color:var(--button-secondary-active-background-color)}.button.secondary.disabled,.button.secondary.loading{color:var(--button-secondary-disabled-text-color);background-color:var(--button-secondary-disabled-background-color);border-color:var(--button-secondary-disabled-border-color)}.button.critical{color:var(--button-critical-default-text-color);background-color:var(--button-critical-default-background-color);border:var(--button-base-border) var(--button-critical-default-border-color)}.button.critical:hover{background-color:var(--button-critical-hover-background-color);border-color:var(--button-critical-hover-border-color)}.button.critical:active{background-color:var(--button-critical-active-background-color);border-color:var(--button-critical-active-border-color)}.button.critical.disabled,.button.critical.loading{color:var(--button-critical-disabled-text-color);background-color:var(--button-critical-disabled-background-color);border-color:var(--button-critical-disabled-border-color)}.button.icon-only,.button.icon-only:focus-visible:after{border-radius:var(--button-icon-only-base-border-radius)}", G = class extends U {
+var Re = ".button{text-decoration:none}.button.primary{color:var(--button-primary-default-text-color);background-color:var(--button-primary-default-background-color);border:var(--button-base-border) var(--button-primary-default-border-color)}.button.primary:hover{background-color:var(--button-primary-hover-background-color);border-color:var(--button-primary-hover-border-color)}.button.primary:active{background-color:var(--button-primary-active-background-color);border-color:var(--button-primary-active-border-color)}.button.primary.disabled,.button.primary.loading{color:var(--button-primary-disabled-text-color);background-color:var(--button-primary-disabled-background-color);border-color:var(--button-primary-disabled-border-color)}.button.secondary{color:var(--button-secondary-default-text-color);background-color:var(--button-secondary-default-background-color);border:var(--button-base-border) var(--button-secondary-default-border-color)}.button.secondary:hover{color:var(--button-secondary-hover-text-color);background-color:var(--button-secondary-hover-background-color)}.button.secondary:active{color:var(--button-secondary-active-text-color);background-color:var(--button-secondary-active-background-color)}.button.secondary.disabled,.button.secondary.loading{color:var(--button-secondary-disabled-text-color);background-color:var(--button-secondary-disabled-background-color);border-color:var(--button-secondary-disabled-border-color)}.button.critical{color:var(--button-critical-default-text-color);background-color:var(--button-critical-default-background-color);border:var(--button-base-border) var(--button-critical-default-border-color)}.button.critical:hover{background-color:var(--button-critical-hover-background-color);border-color:var(--button-critical-hover-border-color)}.button.critical:active{background-color:var(--button-critical-active-background-color);border-color:var(--button-critical-active-border-color)}.button.critical.disabled,.button.critical.loading{color:var(--button-critical-disabled-text-color);background-color:var(--button-critical-disabled-background-color);border-color:var(--button-critical-disabled-border-color)}.button.icon-only,.button.icon-only:focus-visible:after{border-radius:var(--button-icon-only-base-border-radius)}", W = class extends U {
 	constructor(...e) {
 		super(...e), this.variant = "primary";
 	}
 	static {
-		this.styles = [U.styles, B(Le)];
+		this.styles = [U.styles, B(Re)];
 	}
 	getClassNames() {
 		return v(super.getClassNames(), "button", this.variant);
 	}
 };
-H([_({ type: String })], G.prototype, "variant", void 0), G = H([e("jet2-button")], G);
+H([_({ type: String })], W.prototype, "variant", void 0), W = H([e("jet2-button")], W);
+//#endregion
+//#region lib/components/actions/ButtonLink/ButtonLink.scss?inline
+var ze = ".button{-webkit-text-decoration-skip-ink:auto;text-decoration-skip-ink:auto;text-decoration:underline;text-decoration-thickness:1px}.button.primary{color:var(--button-link-primary-default-text-color);background-color:var(--button-link-primary-default-background-color);border-color:var(--button-link-primary-default-border-color)}.button.primary:hover{color:var(--button-link-primary-hover-text-color);background-color:var(--button-link-primary-hover-background-color);border-color:var(--button-link-primary-hover-border-color)}.button.primary:active{color:var(--button-link-primary-active-text-color);background-color:var(--button-link-primary-active-background-color);border-color:var(--button-link-primary-active-border-color)}.button.secondary{color:var(--button-link-secondary-default-text-color);background-color:var(--button-link-secondary-default-background-color);border-color:var(--button-link-secondary-default-border-color)}.button.secondary:hover{color:var(--button-link-secondary-hover-text-color);background-color:var(--button-link-secondary-hover-background-color);border-color:var(--button-link-secondary-hover-border-color)}.button.secondary:active{color:var(--button-link-secondary-active-text-color);background-color:var(--button-link-secondary-active-background-color);border-color:var(--button-link-secondary-active-border-color)}.button.secondary.compact{color:var(--button-link-secondary-compact-text-color)}.button.secondary.compact:hover{color:var(--button-link-secondary-compact-hover-text-color)}.button.secondary.compact:active{color:var(--button-link-secondary-compact-active-text-color)}.button.critical{color:var(--button-link-critical-default-text-color);background-color:var(--button-link-critical-default-background-color);border-color:var(--button-link-critical-default-border-color)}.button.critical:hover{color:var(--button-link-critical-hover-text-color);background-color:var(--button-link-critical-hover-background-color);border-color:var(--button-link-critical-hover-border-color)}.button.critical:active{color:var(--button-link-critical-active-text-color);background-color:var(--button-link-critical-active-background-color);border-color:var(--button-link-critical-active-border-color)}.button.disabled,.button.loading,.button.disabled:hover,.button.disabled:active,.button.loading:hover,.button.loading:active{color:var(--button-link-disabled-text-color);background-color:var(--button-link-disabled-background-color);border-color:var(--button-link-disabled-border-color)}.button.compact{background:var(--button-link-compact-background-color);padding-left:0;padding-right:0}.button.compact:hover,.button.compact:active{background:var(--button-link-compact-background-color);border-color:var(--button-link-compact-border-color)}", G = class extends U {
+	constructor(...e) {
+		super(...e), this.variant = "primary", this.compact = !1;
+	}
+	static {
+		this.styles = [U.styles, B(ze)];
+	}
+	getClassNames() {
+		return v(super.getClassNames(), "button", this.variant, this.compact && "compact");
+	}
+};
+H([_({ type: String })], G.prototype, "variant", void 0), H([_({ type: Boolean })], G.prototype, "compact", void 0), G = H([e("jet2-button-link")], G);
 //#endregion
 //#region lib/components/information/Alert/Alert.scss?inline
-var Re = ":host{padding:var(--alert-base-padding);border:var(--alert-base-border);border-radius:var(--alert-base-border-radius);background-color:var(--alert-base-background-color);color:var(--alert-base-text-color);font:var(--alert-base-text);text-align:left;display:flex}:host([variant=error]){border-color:var(--alert-error-border-color);background-color:var(--alert-error-background-color)}:host([variant=warning]){border-color:var(--alert-warning-border-color);background-color:var(--alert-warning-background-color)}:host([variant=success]){border-color:var(--alert-success-border-color);background-color:var(--alert-success-background-color)}:host([variant=info]){border-color:var(--alert-info-border-color);background-color:var(--alert-info-background-color)}.alert-content{gap:var(--alert-title-margin-bottom);flex-direction:column;align-items:flex-start;display:flex}.alert-title{font:var(--alert-title-text);color:var(--alert-title-text-color);margin:0}.alert-description{margin:0;padding:0}.alert-icon{margin-right:var(--alert-icon-base-margin-right);color:var(--alert-icon-color);flex-shrink:0}:host([variant=error]) svg{color:var(--alert-icon-error-color)}:host([variant=warning]) svg{color:var(--alert-icon-warning-color)}:host([variant=success]) svg{color:var(--alert-icon-success-color)}:host([variant=info]) svg{color:var(--alert-icon-info-color)}", ze = ":host{display:flex}.base{box-sizing:content-box}.primary{color:var(--icon-color-primary)}.secondary{color:var(--icon-color-secondary)}.info{color:var(--icon-color-info)}.success{color:var(--icon-color-success)}.warning{color:var(--icon-color-warning)}.critical{color:var(--icon-color-critical)}.inverse{color:var(--icon-color-inverse)}.theme{color:var(--icon-color-theme)}.sm{width:var(--icon-size-sm);height:var(--icon-size-sm)}.md{width:var(--icon-size-md);height:var(--icon-size-md)}.lg{width:var(--icon-size-lg);height:var(--icon-size-lg)}.featured{background-color:var(--icon-featured-base-background-color);border-radius:var(--icon-featured-base-border-radius);padding:var(--icon-featured-md-padding);justify-content:center;align-items:center;display:flex}.featured.sm{padding:var(--icon-featured-sm-padding)}.featured.md{padding:var(--icon-featured-md-padding)}.featured.lg{padding:var(--icon-featured-lg-padding)}", K = class extends z {
+var Be = ":host{padding:var(--alert-base-padding);border:var(--alert-base-border);border-radius:var(--alert-base-border-radius);background-color:var(--alert-base-background-color);color:var(--alert-base-text-color);font:var(--alert-base-text);text-align:left;display:flex}:host([variant=error]){border-color:var(--alert-error-border-color);background-color:var(--alert-error-background-color)}:host([variant=warning]){border-color:var(--alert-warning-border-color);background-color:var(--alert-warning-background-color)}:host([variant=success]){border-color:var(--alert-success-border-color);background-color:var(--alert-success-background-color)}:host([variant=info]){border-color:var(--alert-info-border-color);background-color:var(--alert-info-background-color)}.alert-content{gap:var(--alert-title-margin-bottom);flex-direction:column;align-items:flex-start;display:flex}.alert-title{font:var(--alert-title-text);color:var(--alert-title-text-color);margin:0}.alert-description{margin:0;padding:0}.alert-icon{margin-right:var(--alert-icon-base-margin-right);color:var(--alert-icon-color);flex-shrink:0}:host([variant=error]) svg{color:var(--alert-icon-error-color)}:host([variant=warning]) svg{color:var(--alert-icon-warning-color)}:host([variant=success]) svg{color:var(--alert-icon-success-color)}:host([variant=info]) svg{color:var(--alert-icon-info-color)}", Ve = ":host{display:flex}.base{box-sizing:content-box}.primary{color:var(--icon-color-primary)}.secondary{color:var(--icon-color-secondary)}.info{color:var(--icon-color-info)}.success{color:var(--icon-color-success)}.warning{color:var(--icon-color-warning)}.critical{color:var(--icon-color-critical)}.inverse{color:var(--icon-color-inverse)}.theme{color:var(--icon-color-theme)}.sm{width:var(--icon-size-sm);height:var(--icon-size-sm)}.md{width:var(--icon-size-md);height:var(--icon-size-md)}.lg{width:var(--icon-size-lg);height:var(--icon-size-lg)}.featured{background-color:var(--icon-featured-base-background-color);border-radius:var(--icon-featured-base-border-radius);padding:var(--icon-featured-md-padding);justify-content:center;align-items:center;display:flex}.featured.sm{padding:var(--icon-featured-sm-padding)}.featured.md{padding:var(--icon-featured-md-padding)}.featured.lg{padding:var(--icon-featured-lg-padding)}", K = class extends z {
 	constructor(...e) {
 		super(...e), this.size = "md";
 	}
 	static {
-		this.styles = B(ze);
+		this.styles = B(Ve);
 	}
 	get svg() {
 		return A``;
@@ -757,7 +771,7 @@ var X = class extends z {
 		super(...e), this.variant = "info";
 	}
 	static {
-		this.styles = B(Re);
+		this.styles = B(Be);
 	}
 	get icon() {
 		let e = `--alert-icon-color: var(--alert-icon-${this.variant}-color)`;
@@ -811,8 +825,20 @@ var Z = class extends K {
 };
 Z = H([e("jet2-icon-arrow-up")], Z);
 //#endregion
-//#region lib/icons/magnifying-glass.ts
+//#region lib/icons/caret-down.ts
 var Q = class extends K {
+	get svg() {
+		return A`
+<svg class=${this.class} width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.6922 7.94218L10.4422 14.1922C10.3841 14.2503 10.3152 14.2964 10.2393 14.3278C10.1635 14.3593 10.0821 14.3755 10 14.3755C9.91786 14.3755 9.83653 14.3593 9.76066 14.3278C9.68478 14.2964 9.61585 14.2503 9.55781 14.1922L3.30781 7.94218C3.19053 7.82491 3.12465 7.66585 3.12465 7.5C3.12465 7.33414 3.19053 7.17508 3.30781 7.05781C3.42508 6.94053 3.58414 6.87465 3.75 6.87465C3.91585 6.87465 4.07491 6.94053 4.19218 7.05781L10 12.8664L15.8078 7.05781C15.8659 6.99974 15.9348 6.95368 16.0107 6.92225C16.0866 6.89082 16.1679 6.87465 16.25 6.87465C16.3321 6.87465 16.4134 6.89082 16.4893 6.92225C16.5652 6.95368 16.6341 6.99974 16.6922 7.05781C16.7503 7.11588 16.7963 7.18482 16.8277 7.26069C16.8592 7.33656 16.8753 7.41787 16.8753 7.5C16.8753 7.58212 16.8592 7.66344 16.8277 7.73931C16.7963 7.81518 16.7503 7.88412 16.6922 7.94218Z" fill="currentColor"/>
+</svg>
+    `;
+	}
+};
+Q = H([e("jet2-icon-caret-down")], Q);
+//#endregion
+//#region lib/icons/magnifying-glass.ts
+var He = class extends K {
 	get svg() {
 		return A`
 <svg class=${this.class} width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -821,7 +847,7 @@ var Q = class extends K {
     `;
 	}
 };
-Q = H([e("jet2-icon-magnifying-glass")], Q);
+He = H([e("jet2-icon-magnifying-glass")], He);
 //#endregion
 //#region lib/icons/x.ts
 var $ = class extends K {
@@ -835,4 +861,4 @@ var $ = class extends K {
 };
 $ = H([e("jet2-icon-x")], $);
 //#endregion
-export { X as Jet2Alert, G as Jet2Button, Z as Jet2IconArrowUp, J as Jet2IconCheck, q as Jet2IconInfo, Q as Jet2IconMagnifyingGlass, Y as Jet2IconWarningCircle, $ as Jet2IconX };
+export { X as Jet2Alert, W as Jet2Button, G as Jet2ButtonLink, Z as Jet2IconArrowUp, Q as Jet2IconCaretDown, J as Jet2IconCheck, q as Jet2IconInfo, He as Jet2IconMagnifyingGlass, Y as Jet2IconWarningCircle, $ as Jet2IconX };
