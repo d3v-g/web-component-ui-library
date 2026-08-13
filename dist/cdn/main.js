@@ -628,7 +628,7 @@ var U = class extends z {
 		return k`
       <slot name="primary"></slot>
 
-      ${this.iconOnly ? M : k`<span class="label">${this.label}</span>`}
+      ${this.iconOnly ? M : k`<span part="label" class="label">${this.label}</span>`}
 
       <slot name="secondary"></slot>
     `;
@@ -636,14 +636,15 @@ var U = class extends z {
 	renderButton() {
 		return k`
       <button
-        type=${V(this.type || "button")}
+        part="action"
+        type=${V(this.type ?? "button")}
         class=${this.getClassNames()}
         ?disabled=${this.isDisabled}
         aria-disabled=${V(this.isDisabled || void 0)}
         aria-busy=${V(this.loading || void 0)}
         aria-label=${V(this.semanticLabel || void 0)}
         @click=${(e) => {
-			this.onClick && this.onClick(e), this.type === "submit" && this.closest("FORM")?.dispatchEvent(new Event("submit"));
+			this.onClick && this.onClick(e), this.type === "submit" && this.closest("FORM")?.dispatchEvent(new Event("submit")), this.type === "reset" && this.closest("FORM")?.dispatchEvent(new Event("reset"));
 		}}
       >
         ${this.renderContent()}
@@ -653,6 +654,7 @@ var U = class extends z {
 	renderAnchor() {
 		return k`
       <a
+        part="action"
         class=${this.getClassNames()}
         href=${V(this.href || void 0)}
         target=${V(this.target || void 0)}
@@ -671,7 +673,7 @@ var U = class extends z {
 H([_({ type: String })], U.prototype, "label", void 0), H([_({ type: String })], U.prototype, "size", void 0), H([_({ type: Boolean })], U.prototype, "disabled", void 0), H([_({ type: Boolean })], U.prototype, "loading", void 0), H([_({
 	type: Boolean,
 	attribute: "icon-only"
-})], U.prototype, "iconOnly", void 0), H([_({ type: String })], U.prototype, "href", void 0), H([_({ type: String })], U.prototype, "target", void 0), H([_({ type: String })], U.prototype, "rel", void 0), H([_({ type: String })], U.prototype, "type", void 0), H([_({ type: Function })], U.prototype, "onClick", void 0), H([de({ slot: "primary" })], U.prototype, "primaryIcons", void 0), H([de({ slot: "secondary" })], U.prototype, "secondaryIcons", void 0);
+})], U.prototype, "iconOnly", void 0), H([_({ type: String })], U.prototype, "href", void 0), H([_({ type: String })], U.prototype, "target", void 0), H([_({ type: String })], U.prototype, "rel", void 0), H([_({ type: String })], U.prototype, "type", void 0), H([_({ attribute: !1 })], U.prototype, "onClick", void 0), H([de({ slot: "primary" })], U.prototype, "primaryIcons", void 0), H([de({ slot: "secondary" })], U.prototype, "secondaryIcons", void 0);
 var Le = class extends U {};
 Le = H([e("jet2-button-base")], Le);
 //#endregion
